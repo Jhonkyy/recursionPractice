@@ -1,7 +1,8 @@
-def palindrome(s):
-    if len(s) == 1 or len(s) == 2:
-        return True
-    else:
-        return s[0] == s[-1] and palindrome(s[1:-1])
+def palindrome(s :str):
+    if len(s) == 0 or len(s) == 1:
+        return print(f"la palabra {s} es palindroma")
+    if s[0] != s[-1]:
+        return False
 
-palindrome("oso")
+
+print(palindrome("oso"))
